@@ -9,7 +9,7 @@
 
 left = 0
 right = 0
-numbers = input("Введите номер билета: ")
+numbers = input("Введите шестизначный номер билета: ")
 for i in range(len(numbers)):
     if i < 3:
         left += int(numbers[i])
