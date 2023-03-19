@@ -7,3 +7,21 @@
 #     1 2 3 4 5
 #     6
 #     -> 5
+
+near = 0
+n = int(input("Введите количество элементов в массиве: "))
+numbers = [i+1 for i in range(n)]
+x = int(input("Введите искомое число: "))
+print(numbers)
+for i in numbers:
+    if numbers[i] == x:
+        print('Ближайшее к искомому числу', x, 'находится на',i,'индексе массива и составляет,', numbers[i])
+        break
+    else:
+        if i == n-1:
+            near = numbers[i]
+            print('Ближайшее к искомому числу', x, 'находится на',i,'индексе массива и составляет,', near)
+            break
+        else:
+            if near <= numbers[i]:
+                near = numbers[i]
