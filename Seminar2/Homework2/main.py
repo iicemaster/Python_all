@@ -7,6 +7,7 @@
 s = int(input("Введите(s) сумму x,y: "))
 p = int(input("Введите(p) произведение x,y: "))
 stop = True
+
 x=1
 while stop==True:
     for y in range (1000):
