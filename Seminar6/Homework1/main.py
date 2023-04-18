@@ -16,5 +16,5 @@ def int_input(word):
 number = int_input("Введите Первый элемент: ")
 interval = int_input("Введите разность: ")
 count = int_input("Введите количество элементов: ")
-result = list(range(number,(number+interval*count),interval))
-print(result)
+print(list(range(number,(number+interval*count),interval)))
+# print(*[((number + (n-1) * interval)+interval) for n in range (count)])
