@@ -14,10 +14,10 @@ def int_input(word):
             temp = int_input(word)
             return temp
 
-a = int_input('a1: ')
-d  = int_input('d: ')
-len = int_input('len: ')
-print(*[((a + (n-1) * d)+d) for n in range (len)])
+# a = int_input('a1: ')
+# d  = int_input('d: ')
+# len = int_input('len: ')
+# print(*[((a + (n-1) * d)+d) for n in range (len)])
 
 # Определить индексы элементов массива (списка), значения которых принадлежат заданному диапазону
 # (т.е. не меньше заданного минимума и не больше заданного максимума)
