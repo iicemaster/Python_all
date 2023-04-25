@@ -16,7 +16,7 @@ def input_records(file_name: str):
         for line in data:
             if line != '':
                 record_id = line.split(';', 1)[0]
-        print('Введите фамилию, имя, отчество, номер телефона через пробел')
+        print('Через пробел введите Фамилию, Имя, Отчество и Номер телефона')
         line = f'{int(record_id) + 1};' + ';'.join(input().split()[:4]) + ';\n'
         confirm = confirmation('добавление записи')
         if confirm == 'y':
